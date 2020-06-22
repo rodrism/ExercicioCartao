@@ -2,6 +2,10 @@
 public class CartaoCashBack extends CartaoPrePago {
 	int tipo;
 	
+	public static final int BRONZE = 0;
+	public static final int SILVER = 1;
+	public static final int GOLD = 2;
+	
 	public CartaoCashBack(String numCartao, String nomTitular, int anoValidade, int mesValidade, double saldo, int tipo) {
 		super(numCartao, nomTitular, anoValidade, mesValidade, saldo);
 		this.tipo = tipo;
