@@ -1,10 +1,13 @@
+import java.util.Scanner;
 
 public class App {
 
 	public static void main(String[] args) {
 		
-		CartaoPrePago cartao = new CartaoPrePago("1234567890", "Rodrigo Santiago", 2022, 05, 200);
-		CartaoPrePago cartao2 = new CartaoCashBack("12345555", "Rodrigo Santiago", 2022, 10, 200,2);
+		Scanner input = new Scanner(System.in);
+		CartaoPrePago cpp = new CartaoPrePago("1234567890", "Rodrigo Santiago", 2022, 05, 200);
+		CartaoPrePago ccb = new CartaoCashBack("12345555", "Rodrigo Santiago", 2022, 10, 200,2);
+		
 		
 		
 		/*
@@ -14,11 +17,12 @@ public class App {
 		*/
 		
 		//cartao2.adicionarCredito(1000);
-		cartao2.comprar(300);
-		cartao.comprar (300);
 		
-		System.out.println(cartao2.getNomTitular());
+		System.out.println(ccb.toString());
+		ccb.comprar (100);
+		System.out.println(ccb.toString());
 		
+				
 	}
 
 }

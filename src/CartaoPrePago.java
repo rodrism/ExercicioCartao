@@ -32,6 +32,12 @@ public class CartaoPrePago {
 		
 	}
 	
+	@Override
+	public String toString() {
+		return "CartaoPrePago [numCartao=" + numCartao + ", nomTitular=" + nomTitular + ", anoValidade=" + anoValidade
+				+ ", mesValidade=" + mesValidade + ", saldo=" + saldo + "]";
+	}
+
 	public String getNumCartao() {
 		return numCartao;
 	}

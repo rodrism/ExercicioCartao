@@ -44,4 +44,10 @@ public class CartaoCashBack extends CartaoPrePago {
 		return false;
 	}
 
+	@Override
+	public String toString() {
+		return "CartaoCashBack [tipo=" + tipo + ", numCartao=" + numCartao + ", nomTitular=" + nomTitular
+				+ ", anoValidade=" + anoValidade + ", mesValidade=" + mesValidade + ", saldo=" + saldo + "]";
+	}
+
 }
