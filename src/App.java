@@ -19,8 +19,9 @@ public class App {
 		System.out.println("");
 		
 		CartaoPrePago cpp = new CartaoPrePago(numCart,nome,anoV,mesV,valor);
-		CartaoPrePago ccb = new CartaoCashBack("12345555", "Rodrigo Santiago", 2022, 10, 200,2);
+		CartaoPrePago ccb = new CartaoCashBack("12345555", "Rodrigo Santiago", 2022, 10, 200,CartaoCashBack.GOLD);
 		
+		ccb.comprar(100);
 		System.out.println("Cartao Cadastrado com Sucesso!");
 		System.out.println(cpp.toString());
 		

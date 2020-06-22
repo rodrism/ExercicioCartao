@@ -21,21 +21,21 @@ public class CartaoCashBack extends CartaoPrePago {
 	
 	public boolean comprar(double valor) {
 		if (valor <= this.saldo) {
-			if (this.tipo == 1) {
+			if (this.tipo == CartaoCashBack.BRONZE) {
 				this.saldo = this.saldo - valor;
 				this.saldo = this.saldo + (valor * 2/100);
 				System.out.println("Compra efetuada com sucesso!");
 				System.out.println("Cartão Bronze! Você recebeu 2% de cash back!");
 				System.out.println("Saldo Atual R$" + this.saldo);
 				return true;
-			} else if (this.tipo == 2){
+			} else if (this.tipo == CartaoCashBack.SILVER){
 				this.saldo = this.saldo - valor;
 				this.saldo = this.saldo + (valor * 5/100);
 				System.out.println("Compra efetuada com sucesso!");
 				System.out.println("Cartao Silver! Você recebeu 5% de cash back!");
 				System.out.println("Saldo Atual R$" + this.saldo);
 				return true;
-			} else if (this.tipo == 3) {
+			} else if (this.tipo == CartaoCashBack.GOLD) {
 				this.saldo = this.saldo - valor;
 				this.saldo = this.saldo + (valor * 8/100);
 				System.out.println("Compra efetuada com sucesso!");
