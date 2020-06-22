@@ -1,10 +1,10 @@
 
 public class CartaoPrePago {
-	String numCartao;
-	String nomTitular;
-	int anoValidade;
-	int mesValidade;
-	double saldo;
+	protected String numCartao;
+	protected String nomTitular;
+	protected int anoValidade;
+	protected int mesValidade;
+	protected double saldo;
 	
 	
 	public CartaoPrePago(String numCartao, String nomTitular, int anoValidade, int mesValidade, double saldo) {
